@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO & Open Graph
+       EDIT: Update title, description, og:image with your real URL
+       ============================================================ -->
+  <title>Lester Vilo — ITO Technical Consultant & IT Professional</title>
+  <meta name="description" content="Detail-oriented ITO Technical Consultant with 4+ years of IT support, hardware configuration, and security monitoring experience. Based in Laie, Hawaii at BYU Hawaii." />
+  <meta name="keywords" content="Lester Vilo, IT professional, network infrastructure, cybersecurity, IT support, Hawaii, BYU Hawaii" />
+  <meta name="author" content="Lester Vilo" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lester Vilo — IT Professional & Network Infrastructure Specialist" />
+  <meta property="og:description" content="IT professional specializing in network infrastructure, cybersecurity, and systems administration. Based in Hawaii." />
+  <meta property="og:url" content="https://lestervilo.github.io" />
+  <!-- EDIT: Replace with a real screenshot of your site after publishing -->
+  <meta property="og:image" content="https://lestervilo.github.io/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lester Vilo — IT Professional" />
+  <meta name="twitter:description" content="IT professional specializing in network infrastructure, cybersecurity, and systems administration." />
+
+  <!-- JSON-LD Structured Data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lester Vilo",
+    "jobTitle": "ITO Technical Consultant",
+    "url": "https://lestervilo.github.io",
+    "address": { "@type": "PostalAddress", "addressLocality": "Laie", "addressRegion": "Hawaii", "addressCountry": "US" },
+    "email": "lestervilo02@gmail.com",
+    "knowsAbout": ["Network Infrastructure", "Cybersecurity", "IT Support", "Microsoft Intune", "TeamDynamix", "Systems Administration"]
+  }
+  </script>
+
+  <!-- Fonts: Cabinet Grotesk (display) + Satoshi (body) via Fontshare -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon (inline SVG data URI — replace with real .ico if needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a6fc4'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='18' fill='white'>LV</text></svg>" />
+
+  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     SKIP TO MAIN (Accessibility)
+     ============================================================ -->
+<a href="#main" class="sr-only" style="
+  position:fixed;top:var(--space-4);left:var(--space-4);z-index:200;
+  background:var(--color-primary);color:#fff;
+  padding:var(--space-2) var(--space-4);border-radius:var(--radius-md);
+  text-decoration:none;font-weight:600;font-size:var(--text-sm);
+  &:focus{clip:auto;width:auto;height:auto;margin:0;overflow:visible;white-space:nowrap}
+">Skip to main content</a>
+
+<!-- ============================================================
+     HEADER / NAV
+     ============================================================ -->
+<header class="header" id="header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+
+      <!-- Logo (SVG) -->
+      <!-- EDIT: Change "LV" initials or replace with an image logo -->
+      <a href="#hero" class="header__logo" aria-label="Lester Vilo — Home">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.12"/>
+          <rect x="1" y="1" width="30" height="30" rx="7" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+            font-family="Cabinet Grotesk, sans-serif" font-weight="900" font-size="14" fill="currentColor">LV</text>
+        </svg>
+        Lester Vilo
+      </a>
+
+      <!-- Nav -->
+      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <a href="#about"        class="nav__link">About</a>
+        <a href="#skills"       class="nav__link">Skills</a>
+        <a href="#projects"     class="nav__link">Projects</a>
+        <a href="#experience"   class="nav__link">Experience</a>
+        <a href="#certificates" class="nav__link">Certs</a>
+        <a href="#services"     class="nav__link">Services</a>
+        <a href="#contact"      class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Dark/Light mode toggle -->
+        <button class="btn-theme" data-theme-toggle aria-label="Switch to dark mode">
+          <!-- Moon icon (shown in light mode) -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <!-- EDIT: Link to your real resume PDF -->
+        <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--sm" download target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+<main id="main">
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO SECTION
+       EDIT: name, title, value statement, stats
+       ══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-labelledby="hero-name">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__badge" aria-label="Availability status">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <!-- EDIT: Change to "Open to opportunities" or "Currently employed" -->
+            Open to new opportunities
+          </div>
+
+          <!-- EDIT: Replace with your name -->
+          <h1 class="hero__name" id="hero-name">Lester Vilo</h1>
+
+          <!-- EDIT: Replace with your exact title -->
+          <p class="hero__title">ITO Technical Consultant</p>
+
+          <!-- EDIT: Replace with your value statement — what makes YOU the right hire? -->
+          <p class="hero__value">
+            Detail-oriented IT professional with 4+ years of experience in IT support, hardware
+            configuration, and security monitoring. I resolve 30+ technical tickets weekly,
+            supervised OS deployments across 150+ lab computers, and bring a proven track record
+            of boosting first-call resolution — while studying for a B.S. in Information Technology
+            at BYU Hawaii.
+          </p>
+
+          <div class="hero__cta">
+            <!-- EDIT: Update href to your contact or email -->
+            <a href="#contact" class="btn btn--primary btn--lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              Get in Touch
+            </a>
+            <a href="#projects" class="btn btn--outline btn--lg">
+              View My Work
+            </a>
+            <!-- EDIT: Link to your real LinkedIn URL -->
+            <a href="https://www.linkedin.com/in/lestervilo" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- EDIT: Replace with your real stats -->
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-num">4+</div>
+              <div class="hero__stat-label">Years IT Experience</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">30+</div>
+              <div class="hero__stat-label">Tickets Resolved / Week</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">150+</div>
+              <div class="hero__stat-label">Systems Deployed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avatar -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__avatar-wrap">
+            <div class="hero__avatar-ring"></div>
+            <div class="hero__avatar-ring-2"></div>
+            <!-- EDIT: Replace src with your real photo path. Example: src="./assets/lester-photo.jpg" -->
+            <!-- If no photo yet, the placeholder initials "LV" will show instead -->
+            <div class="hero__avatar">
+              <div class="hero__avatar-placeholder">LV</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ABOUT SECTION
+       EDIT: bio, strengths, goals
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal reveal-delay-1" id="about-title">Who I Am</h2>
+
+      <div class="about__grid">
+        <div class="reveal reveal-delay-2">
+          <p class="about__bio">
+            I'm Lester Ron Alfred C. Vilo, an ITO Technical Consultant based in Laie, Hawaii, currently pursuing a
+            Bachelor's in Information Technology at Brigham Young University–Hawaii (Class of 2029), with a minor in
+            Entrepreneurship &amp; Supply Chain, Operations, Analytics &amp; Communication.
+          </p>
+          <p class="about__bio">
+            With 4+ years across IT support, hardware configuration, and security monitoring, I've resolved 30+ tickets
+            weekly, led OS deployments across 150+ lab computers, and managed real-time threat detection for a professional
+            security monitoring firm. I'm driven by efficiency, mentorship, and a commitment to keeping systems running at
+            their best — and I'm actively seeking opportunities in IT support, endpoint security, or systems administration.
+          </p>
+
+          <div class="about__strengths" role="list" aria-label="Key strengths">
+            <span class="tag" role="listitem">Computer Assembly</span>
+            <span class="tag" role="listitem">Windows &amp; Apple Troubleshooting</span>
+            <span class="tag" role="listitem">Endpoint Security</span>
+            <span class="tag" role="listitem">Vulnerability Assessment</span>
+            <span class="tag" role="listitem">AV Support</span>
+            <span class="tag" role="listitem">Incident Dispatching</span>
+            <span class="tag" role="listitem">Risk Mitigation</span>
+            <span class="tag" role="listitem">Microsoft Office 365</span>
+            <span class="tag" role="listitem">Mentorship</span>
+            <span class="tag" role="listitem">Multitasking</span>
+          </div>
+        </div>
+
+        <!-- Goals card -->
+        <div class="about__goals reveal reveal-delay-3">
+          <h3>Career Goals</h3>
+          <div class="goal-item">
+            <div class="goal-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div class="goal-text"><strong>Now:</strong> Secure a full-time IT support, endpoint security, or systems administration role where I can drive real impact from day one.</div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="goal-text"><strong>Mid-term:</strong> Complete B.S. in IT at BYUH (2029) and earn CompTIA A+ and Security+ certifications.</div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="goal-text"><strong>Long-term:</strong> Grow into a cybersecurity or systems engineering role — leveraging my minor in Entrepreneurship to bridge tech and business.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SKILLS / TECH STACK
+       EDIT: Add/remove skill categories and items
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section skills" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-label reveal">Technical Skills</div>
+      <h2 class="section-title reveal reveal-delay-1" id="skills-title">My Toolkit</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Tools, platforms, and technologies I work with every day.</p>
+
+      <div class="skills__grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="skill-card__title">IT Support &amp; Hardware</div>
+          <div class="skill-card__items">
+            <span class="skill-pill">Computer Assembly</span>
+            <span class="skill-pill">Windows Troubleshooting</span>
+            <span class="skill-pill">Apple/macOS Support</span>
+            <span class="skill-pill">AV Support</span>
+            <span class="skill-pill">OS Deployment</span>
+            <span class="skill-pill">Data Entry</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="skill-card__title">Security &amp; Monitoring</div>
+          <div class="skill-card__items">
+            <span class="skill-pill">Endpoint Security</span>
+            <span class="skill-pill">Vulnerability Assessment</span>
+            <span class="skill-pill">Risk Mitigation</span>
+            <span class="skill-pill">Incident Dispatching</span>
+            <span class="skill-pill">Antivirus Installation</span>
+            <span class="skill-pill">Threat Detection</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div class="skill-card__title">Software &amp; Tools</div>
+          <div class="skill-card__items">
+            <span class="skill-pill">Microsoft Office 365</span>
+            <span class="skill-pill">Excel (Advanced)</span>
+            <span class="skill-pill">Windows 10/11</span>
+            <span class="skill-pill">HTML / CSS / JS</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="skill-card__title">Soft Skills</div>
+          <div class="skill-card__items">
+            <span class="skill-pill">Multitasking</span>
+            <span class="skill-pill">Responsiveness</span>
+            <span class="skill-pill">Adaptability</span>
+            <span class="skill-pill">Efficiency</span>
+            <span class="skill-pill">Mentorship</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div class="skill-card__title">Systems &amp; OS</div>
+          <div class="skill-card__items">
+            <span class="skill-pill">Windows 10/11</span>
+            <span class="skill-pill">macOS</span>
+            <span class="skill-pill">System Maintenance</span>
+            <span class="skill-pill">Lab Computer Mgmt</span>
+            <span class="skill-pill">Antivirus / Security SW</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="skill-card__title">Leadership &amp; Coordination</div>
+          <div class="skill-card__items">
+            <span class="skill-pill">Event Planning</span>
+            <span class="skill-pill">Team Mentorship</span>
+            <span class="skill-pill">Social Media Mgmt</span>
+            <span class="skill-pill">Newsletter Writing</span>
+            <span class="skill-pill">Member Recruitment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FEATURED PROJECTS
+       EDIT: Replace each project card with your real projects
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section projects" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-label reveal">Featured Work</div>
+      <h2 class="section-title reveal reveal-delay-1" id="projects-title">Projects</h2>
+      <p class="section-subtitle reveal reveal-delay-2">A selection of projects that demonstrate my technical skills and problem-solving ability.</p>
+
+      <div class="projects__grid">
+
+        <!-- PROJECT 1: AI Accounting Webpage -->
+        <article class="project-card reveal" aria-label="Project: AI-Driven Accounting Webpage">
+          <div class="project-card__image">
+            <!-- ADD SCREENSHOT: <img src="./assets/project-accounting.jpg" alt="AI Accounting Webpage screenshot" loading="lazy" width="800" height="450"> -->
+            <div class="project-card__img-placeholder" aria-label="Project preview">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__category">Web Development</div>
+            <h3 class="project-card__title">AI-Driven Accounting Webpage</h3>
+            <p class="project-card__summary">
+              A web application integrating AI to automate accounting tasks, generate financial summaries,
+              and assist users with expense tracking. Demonstrates ability to combine AI APIs with a clean,
+              user-focused frontend interface.
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-tag">HTML</span>
+              <span class="stack-tag">CSS</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">AI API</span>
+            </div>
+            <div class="project-card__links">
+              <!-- UPDATE: Replace with your actual GitHub repo URL -->
+              <a href="https://github.com/lestervilo/Finance-Project" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Java Maze -->
+        <article class="project-card reveal reveal-delay-1" aria-label="Project: Java Maze Solver">
+          <div class="project-card__image">
+            <!-- ADD SCREENSHOT: <img src="./assets/project-maze.jpg" alt="Java Maze Solver screenshot" loading="lazy" width="800" height="450"> -->
+            <div class="project-card__img-placeholder" aria-label="Project preview">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__category">Software Development · BYUH Coursework</div>
+            <h3 class="project-card__title">Java Maze Solver</h3>
+            <p class="project-card__summary">
+              Java-based maze generation and pathfinding application built at BYU Hawaii.
+              Applies depth-first search and backtracking algorithms to generate and solve
+              complex mazes — showcasing object-oriented programming and algorithmic thinking.
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-tag">Java</span>
+              <span class="stack-tag">OOP</span>
+              <span class="stack-tag">Algorithms</span>
+              <span class="stack-tag">Data Structures</span>
+            </div>
+            <div class="project-card__links">
+              <!-- UPDATE: Replace with your actual GitHub repo URL -->
+              <a href="https://github.com/lestervilo/CS202" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Real work — Lab OS Deployment -->
+        <article class="project-card reveal reveal-delay-2" aria-label="Project: 150+ Lab Computer OS Deployment">
+          <div class="project-card__image">
+            <!-- ADD PHOTO: <img src="./assets/project-lab.jpg" alt="Lab deployment" loading="lazy" width="800" height="450"> -->
+            <div class="project-card__img-placeholder" aria-label="Project preview">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M7 7h.01M11 7h.01M15 7h.01"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__category">Systems Administration · BYU Hawaii ITO</div>
+            <h3 class="project-card__title">150+ Lab Computer OS Deployment</h3>
+            <p class="project-card__summary">
+              Supervised the deployment of new operating systems and security software across 150+ lab
+              computers at BYU Hawaii. Ensured full compliance, minimized downtime, and maintained
+              system integrity throughout the rollout — a real-world enterprise-scale deployment.
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-tag">Windows 11</span>
+              <span class="stack-tag">OS Deployment</span>
+              <span class="stack-tag">Endpoint Security</span>
+              <span class="stack-tag">Compliance</span>
+            </div>
+            <div class="project-card__links">
+              <span class="btn btn--ghost btn--sm" style="cursor:default;opacity:0.65;">Professional Work</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       EXPERIENCE
+       EDIT: Add your real jobs, internships, leadership roles
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section experience" id="experience" aria-labelledby="experience-title">
+    <div class="container container--default">
+      <div class="section-label reveal">Background</div>
+      <h2 class="section-title reveal reveal-delay-1" id="experience-title">Experience</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Jobs, leadership roles, and contributions that shaped my professional foundation.</p>
+
+      <div class="timeline">
+
+        <!-- ITO CSR Technical Consultant — BYUH -->
+        <div class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__period">October 2025 – Present</div>
+          <div class="timeline__role">ITO CSR Technical Consultant</div>
+          <div class="timeline__org">Brigham Young University · Laie, Hawaii</div>
+          <p class="timeline__desc">
+            Resolve 30+ technical tickets weekly covering hardware, software, and network issues —
+            improving first-call resolution by 15%. Supervised the deployment of new OS and security
+            software across 150+ lab computers, ensuring compliance and minimal downtime.
+          </p>
+          <div class="timeline__tags">
+            <span class="tag">IT Support</span>
+            <span class="tag">OS Deployment</span>
+            <span class="tag">Hardware Troubleshooting</span>
+            <span class="tag">Endpoint Security</span>
+            <span class="tag">Network Support</span>
+          </div>
+        </div>
+
+        <!-- Club Specialist — Student Leadership -->
+        <div class="timeline__item reveal reveal-delay-1">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__period">September 2025 – Present</div>
+          <div class="timeline__role">Club Specialist</div>
+          <div class="timeline__org">Student Leadership and Service · Laie, Hawaii</div>
+          <p class="timeline__desc">
+            Coordinated logistics for 30+ club events and activities per semester, ensuring effective
+            planning, promotion, and execution. Developed and maintained communication channels
+            (social media, newsletters) that increased overall club engagement by 75%.
+          </p>
+          <div class="timeline__tags">
+            <span class="tag">Event Coordination</span>
+            <span class="tag">Social Media</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Member Recruitment</span>
+          </div>
+        </div>
+
+        <!-- Detection Specialist — Stealth Monitoring -->
+        <div class="timeline__item reveal reveal-delay-2">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__period">August 2024 – March 2025</div>
+          <div class="timeline__role">Detection Specialist</div>
+          <div class="timeline__org">Stealth Monitoring · Pasig, Philippines</div>
+          <p class="timeline__desc">
+            Identified and assessed 100+ potential threats weekly by monitoring live video feeds
+            and processing 500+ motion-triggered alarms. Communicated 5–7 critical threats daily
+            in real-time to the Escalation Group, ensuring swift response and resolution.
+          </p>
+          <div class="timeline__tags">
+            <span class="tag">Threat Detection</span>
+            <span class="tag">Security Monitoring</span>
+            <span class="tag">Incident Dispatching</span>
+            <span class="tag">Real-Time Communication</span>
+          </div>
+        </div>
+
+        <!-- IT Hardware Assistant — AMD Tech -->
+        <div class="timeline__item reveal reveal-delay-3">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__period">July 2021 – June 2023</div>
+          <div class="timeline__role">IT Hardware Assistant</div>
+          <div class="timeline__org">AMD Tech Franchise · Tupi, South Cotabato, Philippines</div>
+          <p class="timeline__desc">
+            Assembled and configured 25+ custom business computers to exact client specifications.
+            Installed antivirus software and performed regular system maintenance and cleaning,
+            extending hardware lifespan for 60+ computer units.
+          </p>
+          <div class="timeline__tags">
+            <span class="tag">Computer Assembly</span>
+            <span class="tag">Hardware Configuration</span>
+            <span class="tag">Antivirus Installation</span>
+            <span class="tag">System Maintenance</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CERTIFICATES
+       EDIT: Add/remove your real certifications
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section certificates" id="certificates" aria-labelledby="certs-title">
+    <div class="container">
+      <div class="section-label reveal">Credentials</div>
+      <h2 class="section-title reveal reveal-delay-1" id="certs-title">Certificates</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Verified credentials from recognized institutions and platforms.</p>
+
+      <div class="certs__grid">
+
+        <!-- CERT 1: Windows 11 Advanced Troubleshooting -->
+        <div class="cert-card reveal">
+          <div class="cert-card__header">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div>
+              <div class="cert-card__title">Windows 11 for IT Support: Advanced Troubleshooting</div>
+              <div class="cert-card__issuer">LinkedIn Learning</div>
+            </div>
+          </div>
+          <div class="cert-card__meta">
+            <span class="cert-date">Completed</span>
+            <!-- UPDATE: Add your LinkedIn Learning certificate link -->
+            <a href="#" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer" aria-label="View Windows 11 certificate">View</a>
+          </div>
+        </div>
+
+        <!-- CERT 2: Excel Essential Training -->
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-card__header">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <div>
+              <div class="cert-card__title">Excel Essential Training (Microsoft 365)</div>
+              <div class="cert-card__issuer">LinkedIn Learning / Microsoft</div>
+            </div>
+          </div>
+          <div class="cert-card__meta">
+            <span class="cert-date">Completed</span>
+            <!-- UPDATE: Add your certificate link -->
+            <a href="#" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer" aria-label="View Excel certificate">View</a>
+          </div>
+        </div>
+
+        <!-- CERT 3: Life Saving (BYUH) -->
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-card__header">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <div class="cert-card__title">SSAC 164 Life Saving</div>
+              <div class="cert-card__issuer">BYU Hawaii</div>
+            </div>
+          </div>
+          <div class="cert-card__meta">
+            <span class="cert-date">Completed</span>
+            <span class="btn btn--ghost btn--sm" style="cursor:default;opacity:0.6;">Verified</span>
+          </div>
+        </div>
+
+        <!-- CERT 4: Next target — CompTIA A+ -->
+        <div class="cert-card reveal reveal-delay-3" style="border-style:dashed;opacity:0.75;">
+          <div class="cert-card__header">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
+            <div>
+              <div class="cert-card__title">CompTIA A+ — In Progress</div>
+              <div class="cert-card__issuer">CompTIA · Target: 2026</div>
+            </div>
+          </div>
+          <div class="cert-card__meta">
+            <span class="cert-date">Upcoming</span>
+            <span class="btn btn--ghost btn--sm" style="cursor:default;opacity:0.5;">Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SERVICES
+       EDIT: Describe what you can offer to employers/clients
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-label reveal">What I Offer</div>
+      <h2 class="section-title reveal reveal-delay-1" id="services-title">Services</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Ways I can contribute to your team or organization from day one.</p>
+
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="service-card__title">IT Support &amp; Help Desk</div>
+          <p class="service-card__desc">
+            Responsive tier-1 and tier-2 technical support for hardware, software, and network issues.
+            Proven track record resolving 30+ tickets weekly with a 15% improvement in first-call
+            resolution at BYU Hawaii.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="service-card__title">Endpoint Security &amp; Monitoring</div>
+          <p class="service-card__desc">
+            Vulnerability assessments, antivirus deployment, incident dispatching, and risk mitigation.
+            Experienced monitoring 500+ motion-triggered alarms and communicating critical threats
+            in real-time to escalation teams.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div class="service-card__title">Hardware Configuration &amp; Assembly</div>
+          <p class="service-card__desc">
+            Custom business computer assembly, configuration, and ongoing maintenance.
+            Assembled 25+ computers to client specs and extended hardware lifespan for
+            60+ units through regular maintenance and antivirus installation.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div class="service-card__title">OS &amp; Systems Deployment</div>
+          <p class="service-card__desc">
+            Large-scale OS imaging and deployment with compliance and minimal downtime.
+            Supervised a full OS and security software rollout across 150+ computers at
+            BYU Hawaii — coordinating testing, scheduling, and post-deployment support.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="service-card__title">Web Development</div>
+          <p class="service-card__desc">
+            Clean, responsive websites and web tools using HTML, CSS, and JavaScript.
+            Experienced building AI-integrated web applications for practical, real-world
+            use cases — focused on usability and performance.
+          </p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="service-card__title">Event &amp; Team Coordination</div>
+          <p class="service-card__desc">
+            Planning, logistics, and communication for team events and programs.
+            Coordinated 30+ events per semester and grew club engagement by 75% through
+            strategic social media and newsletter campaigns.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       RESUME DOWNLOAD
+       EDIT: Link to your actual resume PDF file
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section resume" id="resume" aria-labelledby="resume-title">
+    <div class="container">
+      <div class="resume__inner reveal">
+        <div class="resume__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="section-label" style="text-align:center;margin-bottom:var(--space-3)">Resume</div>
+        <h2 class="section-title" id="resume-title" style="text-align:center">Download My Resume</h2>
+        <p style="text-align:center;color:var(--color-text-muted);font-size:var(--text-base);margin-bottom:var(--space-8);max-width:48ch;margin-inline:auto;">
+          Get a full overview of my experience, skills, and qualifications in a single, recruiter-ready document.
+        </p>
+        <!-- EDIT: Replace href with your actual resume file path or Google Drive link -->
+        <div style="display:flex;justify-content:center;gap:var(--space-4);flex-wrap:wrap;">
+          <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--lg" download target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume (PDF)
+          </a>
+          <!-- EDIT: Optional — link to your LinkedIn resume or online resume -->
+          <a href="https://linkedin.com/in/lester-vilo-8434881b7" class="btn btn--outline btn--lg" target="_blank" rel="noopener noreferrer">
+            View on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CONTACT
+       EDIT: Update all links with your real contact info
+       ══════════════════════════════════════════════════════════ -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-label reveal">Let's Connect</div>
+      <h2 class="section-title reveal reveal-delay-1" id="contact-title">Get in Touch</h2>
+      <p class="section-subtitle reveal reveal-delay-2">I'm open to full-time roles, internships, and freelance opportunities in IT and network infrastructure.</p>
+
+      <div class="contact__grid">
+
+        <!-- Contact links -->
+        <div class="reveal reveal-delay-1">
+          <div class="contact__info-title">Reach Me Directly</div>
+          <div class="contact__links">
+
+            <!-- EDIT: Replace href with your real email -->
+            <a href="mailto:lestervilo02@gmail.com" class="contact-link">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-link__text">Email</div>
+                <!-- EDIT: Your email address -->
+                <div class="contact-link__sub">lestervilo02@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- EDIT: Replace href with your real LinkedIn -->
+            <a href="https://www.linkedin.com/in/lestervilo" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="contact-link__text">LinkedIn</div>
+                <!-- EDIT: Your LinkedIn handle -->
+                <div class="contact-link__sub">linkedin.com/in/lestervilo</div>
+              </div>
+            </a>
+
+            <!-- EDIT: Replace href with your real GitHub -->
+            <a href="https://github.com/lestervilo" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <div class="contact-link__text">GitHub</div>
+                <!-- EDIT: Your GitHub username -->
+                <div class="contact-link__sub">github.com/lestervilo</div>
+              </div>
+            </a>
+
+            <!-- EDIT: Add, remove, or change this to any other link (Discord, X/Twitter, etc.) -->
+            <a href="tel:+18089948520" class="contact-link">
+              <div class="contact-link__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.55 6.55l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-link__text">Phone</div>
+                
+                <div class="contact-link__sub">(808) 994-8520</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="reveal reveal-delay-2">
+          <form class="contact__form" id="contactForm" aria-label="Contact form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="form-name">Name</label>
+              <input class="form-input" type="text" id="form-name" name="name" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email</label>
+              <input class="form-input" type="email" id="form-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subject</label>
+              <input class="form-input" type="text" id="form-subject" name="subject" placeholder="Job opportunity / Collaboration / Question" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message</label>
+              <textarea class="form-textarea" id="form-message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+            </div>
+            <!-- NOTE: This form currently shows a success message only. -->
+            <!-- To make it functional, connect it to Formspree, Netlify Forms, or a backend. -->
+            <!-- See: https://formspree.io/ for easy setup -->
+            <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div id="formSuccess" aria-live="polite" style="display:none;padding:var(--space-3) var(--space-4);background:var(--color-primary-highlight);border:1px solid var(--color-primary);border-radius:var(--radius-md);font-size:var(--text-sm);color:var(--color-primary);font-weight:500;">
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     EDIT: Update year, social links
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <p class="footer__copy">
+        &copy; <span id="footerYear"></span> Lester Vilo. All rights reserved.
+      </p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#about"    class="footer__link">About</a>
+        <a href="#projects" class="footer__link">Projects</a>
+        <a href="#contact"  class="footer__link">Contact</a>
+        <!-- EDIT: Your real LinkedIn/GitHub URLs -->
+        <a href="https://linkedin.com/in/lester-vilo-8434881b7" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/lestervilo"      class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top button -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="./app.js" defer></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
