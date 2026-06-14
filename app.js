@@ -196,21 +196,12 @@
       return;
     }
 
-    // Simulate sending (replace this block with a real fetch to Formspree etc.)
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending…';
 
-    setTimeout(() => {
-      formSuccess.style.display = 'block';
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-    }, 1200);
-
-    /* --- REAL FORMSPREE INTEGRATION (uncomment and set your endpoint) ---
     const data = new FormData(form);
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    fetch('https://formspree.io/f/mzdqybvo', {
       method: 'POST',
       body: data,
       headers: { 'Accept': 'application/json' }
@@ -220,15 +211,20 @@
         formSuccess.style.display = 'block';
         form.reset();
       } else {
-        alert('Something went wrong. Please email me directly.');
+        formSuccess.style.display = 'block';
+        formSuccess.style.background = 'var(--color-error, #fee)';
+        formSuccess.style.color = 'var(--color-error, #c0394b)';
+        formSuccess.textContent = 'Something went wrong. Please email me directly at lestervilo02@gmail.com';
       }
       submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
     })
     .catch(() => {
-      alert('Network error. Please email me directly.');
+      formSuccess.style.display = 'block';
+      formSuccess.textContent = 'Network error. Please email me directly at lestervilo02@gmail.com';
       submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
     });
-    */
   });
 
   /* -----------------------------------------------------------
