@@ -178,53 +178,18 @@
   });
 
   /* -----------------------------------------------------------
-     CONTACT FORM — demo feedback (no real submission)
-     To make real: replace with Formspree fetch or EmailJS
+     CONTACT FORM — handled natively by Formspree (Basic HTML)
+     The <form action="https://formspree.io/f/mzdqybvo" method="POST">
+     submits directly. No JS needed. Button feedback only.
      ----------------------------------------------------------- */
   const form = document.getElementById('contactForm');
-  const formSuccess = document.getElementById('formSuccess');
 
-  form && form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const name  = form.querySelector('#form-name').value.trim();
-    const email = form.querySelector('#form-email').value.trim();
-    const msg   = form.querySelector('#form-message').value.trim();
-
-    if (!name || !email || !msg) {
-      alert('Please fill in your name, email, and message.');
-      return;
-    }
-
+  form && form.addEventListener('submit', () => {
     const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
-
-    const data = new FormData(form);
-    fetch('https://formspree.io/f/mzdqybvo', {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(r => {
-      if (r.ok) {
-        formSuccess.style.display = 'block';
-        form.reset();
-      } else {
-        formSuccess.style.display = 'block';
-        formSuccess.style.background = 'var(--color-error, #fee)';
-        formSuccess.style.color = 'var(--color-error, #c0394b)';
-        formSuccess.textContent = 'Something went wrong. Please email me directly at lestervilo02@gmail.com';
-      }
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-    })
-    .catch(() => {
-      formSuccess.style.display = 'block';
-      formSuccess.textContent = 'Network error. Please email me directly at lestervilo02@gmail.com';
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-    });
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+    }
   });
 
   /* -----------------------------------------------------------
