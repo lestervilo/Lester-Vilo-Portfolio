@@ -110,10 +110,9 @@
             <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
           </svg>
         </button>
-        <!-- Opens the PDF in a new tab for browser preview. -->
-        <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          View Resume
+        <a href="#resume" class="btn btn--primary btn--sm" aria-label="View résumé preview on this page">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          View Résumé
         </a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
           <span></span><span></span><span></span>
@@ -770,32 +769,78 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       RESUME DOWNLOAD
-       EDIT: Link to your actual resume PDF file
-       ══════════════════════════════════════════════════════════ -->
+  <!-- RÉSUMÉ PREVIEW -->
   <section class="section resume" id="resume" aria-labelledby="resume-title">
     <div class="container">
       <div class="resume__inner reveal">
         <div class="resume__icon" aria-hidden="true">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
-        <div class="section-label" style="text-align:center;margin-bottom:var(--space-3)">Resume</div>
-        <h2 class="section-title" id="resume-title" style="text-align:center">Preview My Resume</h2>
-        <p style="text-align:center;color:var(--color-text-muted);font-size:var(--text-base);margin-bottom:var(--space-8);max-width:48ch;margin-inline:auto;">
-          Open the PDF in your browser to preview my experience, skills, and qualifications.
-        </p>
-        <!-- Opens the PDF in a new tab for browser preview. -->
-        <div style="display:flex;justify-content:center;gap:var(--space-4);flex-wrap:wrap;">
-          <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Preview Resume (PDF)
-          </a>
-          <!-- EDIT: Optional — link to your LinkedIn resume or online resume -->
-          <a href="https://www.linkedin.com/in/lestervilo" class="btn btn--outline btn--lg" target="_blank" rel="noopener noreferrer">
-            View on LinkedIn
-          </a>
-        </div>
+        <div class="section-label">Résumé</div>
+        <h2 class="section-title" id="resume-title">Résumé Preview</h2>
+        <p class="section-subtitle">A concise overview of my experience, education, and technical skills.</p>
+
+        <article class="resume-preview" aria-label="Lester Vilo résumé preview">
+          <header class="resume-preview__header">
+            <h3>Lester Vilo</h3>
+            <p>Information Technology Security Specialist</p>
+            <p class="resume-preview__location">Laie, Hawaii · BYU–Hawaii</p>
+          </header>
+
+          <section class="resume-preview__section" aria-labelledby="resume-summary-title">
+            <h4 id="resume-summary-title">Professional Summary</h4>
+            <p>Information Technology Security Specialist working with the CES Information Security Operations Center and BYU–Hawaii IT staff to support campus cybersecurity. Experience includes IT operations, hardware and software troubleshooting, operating-system deployment, security monitoring, and project coordination.</p>
+          </section>
+
+          <div class="resume-preview__grid">
+            <section class="resume-preview__section" aria-labelledby="resume-experience-title">
+              <h4 id="resume-experience-title">Experience</h4>
+              <div class="resume-preview__item">
+                <h5>Information Technology Security Specialist</h5>
+                <p class="resume-preview__meta">Brigham Young University–Hawaii · November 2026–Present</p>
+                <p>Support cybersecurity efforts with the CES SOC and campus IT, including vulnerability remediation, security dashboards, log investigations, phishing response, and user awareness.</p>
+              </div>
+              <div class="resume-preview__item">
+                <h5>Student Project and Operations Planner</h5>
+                <p class="resume-preview__meta">Brigham Young University–Hawaii · October 2025–November 2026</p>
+                <p>Served as a primary contact for campus IT requests and helped diagnose hardware, software, and network issues for students and faculty.</p>
+              </div>
+              <div class="resume-preview__item">
+                <h5>Detection Specialist</h5>
+                <p class="resume-preview__meta">Stealth Monitoring · August 2024–March 2025</p>
+                <p>Monitored alerts, assessed potential threats, and communicated critical incidents to escalation teams.</p>
+              </div>
+              <div class="resume-preview__item">
+                <h5>IT Hardware Assistant</h5>
+                <p class="resume-preview__meta">AMD Tech Franchise · July 2021–June 2023</p>
+                <p>Assembled and configured computers, installed antivirus software, and performed hardware maintenance.</p>
+              </div>
+            </section>
+
+            <div>
+              <section class="resume-preview__section" aria-labelledby="resume-education-title">
+                <h4 id="resume-education-title">Education</h4>
+                <div class="resume-preview__item">
+                  <h5>B.S. in Information Technology</h5>
+                  <p class="resume-preview__meta">Brigham Young University–Hawaii · Expected 2029</p>
+                  <p>Minor in Entrepreneurship and Supply Chain, Operations, Analytics &amp; Communication.</p>
+                </div>
+              </section>
+
+              <section class="resume-preview__section" aria-labelledby="resume-skills-title">
+                <h4 id="resume-skills-title">Selected Skills</h4>
+                <ul class="resume-preview__skills">
+                  <li>Cybersecurity and information security</li>
+                  <li>Vulnerability remediation</li>
+                  <li>Log investigation and phishing response</li>
+                  <li>IT service management and operations</li>
+                  <li>Windows deployment and endpoint security</li>
+                  <li>Hardware diagnostics and troubleshooting</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
