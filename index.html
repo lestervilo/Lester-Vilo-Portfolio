@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://api.fontshare.com; font-src 'self' data: https://cdn.fontshare.com https://api.fontshare.com; img-src 'self' data:; connect-src 'self'; form-action https://formspree.io; object-src 'none'; base-uri 'self'; upgrade-insecure-requests" />
 
   <!-- ============================================================
        SEO & Open Graph
        EDIT: Update title, description, og:image with your real URL
        ============================================================ -->
-  <title>Lester Vilo — ITO Technical Consultant & IT Professional</title>
-  <meta name="description" content="Detail-oriented ITO Technical Consultant with 4+ years of IT support, hardware configuration, and security monitoring experience. Based in Laie, Hawaii at BYU Hawaii." />
+  <title>Lester Vilo — Information Technology Security Specialist</title>
+  <meta name="description" content="Information Technology Security Specialist at BYU–Hawaii with experience in IT operations, cybersecurity, hardware support, and systems administration." />
   <meta name="keywords" content="Lester Vilo, IT professional, network infrastructure, cybersecurity, IT support, Hawaii, BYU Hawaii" />
   <meta name="author" content="Lester Vilo" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Lester Vilo — IT Professional & Network Infrastructure Specialist" />
-  <meta property="og:description" content="IT professional specializing in network infrastructure, cybersecurity, and systems administration. Based in Hawaii." />
+  <meta property="og:title" content="Lester Vilo — Information Technology Security Specialist" />
+  <meta property="og:description" content="Information Technology Security Specialist at BYU–Hawaii, focused on cybersecurity, IT operations, and practical technology projects." />
   <meta property="og:url" content="https://lestervilo.github.io" />
   <!-- EDIT: Replace with a real screenshot of your site after publishing -->
   <meta property="og:image" content="https://lestervilo.github.io/assets/og-image.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Lester Vilo — IT Professional" />
-  <meta name="twitter:description" content="IT professional specializing in network infrastructure, cybersecurity, and systems administration." />
+  <meta name="twitter:title" content="Lester Vilo — Information Technology Security Specialist" />
+  <meta name="twitter:description" content="Information Technology Security Specialist at BYU–Hawaii, focused on cybersecurity, IT operations, and practical technology projects." />
 
   <!-- JSON-LD Structured Data (Person) -->
   <script type="application/ld+json">
@@ -33,7 +35,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Lester Vilo",
-    "jobTitle": "ITO Technical Consultant",
+    "jobTitle": "Information Technology Security Specialist",
     "url": "https://lestervilo.github.io",
     "address": { "@type": "PostalAddress", "addressLocality": "Laie", "addressRegion": "Hawaii", "addressCountry": "US" },
     "email": "lestervilo02@gmail.com",
@@ -96,15 +98,17 @@
       <div class="header__actions">
         <!-- Dark/Light mode toggle -->
         <button class="btn-theme" data-theme-toggle aria-label="Switch to dark mode">
-          <!-- Moon icon (shown in light mode) -->
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <svg data-theme-icon="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
+          <svg data-theme-icon="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" hidden>
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
         </button>
-        <!-- EDIT: Link to your real resume PDF -->
-        <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--sm" download target="_blank" rel="noopener noreferrer">
+        <!-- Opens the PDF in a new tab for browser preview. -->
+        <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Resume
+          View Resume
         </a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
           <span></span><span></span><span></span>
@@ -134,22 +138,18 @@
           <div class="hero__badge" aria-label="Availability status">
             <span class="hero__badge-dot" aria-hidden="true"></span>
             <!-- EDIT: Change to "Open to opportunities" or "Currently employed" -->
-            Open to new opportunities
+            Information Technology Security Specialist
           </div>
 
           <!-- EDIT: Replace with your name -->
           <h1 class="hero__name" id="hero-name">Lester Vilo</h1>
 
           <!-- EDIT: Replace with your exact title -->
-          <p class="hero__title">ITO Technical Consultant</p>
+          <p class="hero__title">Information Technology Security Specialist</p>
 
           <!-- EDIT: Replace with your value statement — what makes YOU the right hire? -->
           <p class="hero__value">
-            Detail-oriented IT professional with 4+ years of experience in IT support, hardware
-            configuration, and security monitoring. I resolve 30+ technical tickets weekly,
-            supervised OS deployments across 150+ lab computers, and bring a proven track record
-            of boosting first-call resolution — while studying for a B.S. in Information Technology
-            at BYU Hawaii.
+            IT professional focused on cybersecurity, information security operations, and campus IT. I work with the CES Information Security Operations Center and BYU–Hawaii IT teams while pursuing a B.S. in Information Technology at BYU–Hawaii.
           </p>
 
           <div class="hero__cta">
@@ -212,7 +212,7 @@
       <div class="about__grid">
         <div class="reveal reveal-delay-2">
           <p class="about__bio">
-            I'm Lester Ron Alfred C. Vilo, an ITO Technical Consultant based in Laie, Hawaii, currently pursuing a
+            I'm Lester Ron Alfred C. Vilo, an Information Technology Security Specialist based in Laie, Hawaii, currently pursuing a
             Bachelor's in Information Technology at Brigham Young University–Hawaii (Class of 2029), with a minor in
             Entrepreneurship &amp; Supply Chain, Operations, Analytics &amp; Communication.
           </p>
@@ -220,7 +220,7 @@
             With 4+ years across IT support, hardware configuration, and security monitoring, I've resolved 30+ tickets
             weekly, led OS deployments across 150+ lab computers, and managed real-time threat detection for a professional
             security monitoring firm. I'm driven by efficiency, mentorship, and a commitment to keeping systems running at
-            their best — and I'm actively seeking opportunities in IT support, endpoint security, or systems administration.
+            their best. I enjoy building practical tools, improving support workflows, and helping protect the systems people rely on.
           </p>
 
           <div class="about__strengths" role="list" aria-label="Key strengths">
@@ -364,100 +364,103 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════
-       FEATURED PROJECTS
-       EDIT: Replace each project card with your real projects
-       ══════════════════════════════════════════════════════════ -->
+  <!-- FEATURED PROJECTS -->
   <section class="section projects" id="projects" aria-labelledby="projects-title">
     <div class="container">
       <div class="section-label reveal">Featured Work</div>
       <h2 class="section-title reveal reveal-delay-1" id="projects-title">Projects</h2>
-      <p class="section-subtitle reveal reveal-delay-2">A selection of projects that demonstrate my technical skills and problem-solving ability.</p>
+      <p class="section-subtitle reveal reveal-delay-2">A selection of hands-on projects that show how I build, troubleshoot, and secure technology.</p>
 
       <div class="projects__grid">
 
-        <!-- PROJECT 1: AI Accounting Webpage -->
-        <article class="project-card reveal" aria-label="Project: AI-Driven Accounting Webpage">
+        <article class="project-card reveal" aria-label="Project: AV Equipment Management Portal">
           <div class="project-card__image">
-            <!-- ADD SCREENSHOT: <img src="./assets/project-accounting.jpg" alt="AI Accounting Webpage screenshot" loading="lazy" width="800" height="450"> -->
-            <div class="project-card__img-placeholder" aria-label="Project preview">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div class="project-card__img-placeholder" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4M7 8h10M7 12h6"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__category">Full-Stack Development · Operations</div>
+            <h3 class="project-card__title">AV Equipment Management Portal</h3>
+            <p class="project-card__summary">A web-based system for managing audiovisual equipment, reservations, and preparation workflows. Built to make equipment status easier to track and reduce manual coordination.</p>
+            <div class="project-card__stack">
+              <span class="stack-tag">Inventory</span>
+              <span class="stack-tag">Reservations</span>
+              <span class="stack-tag">Workflow Design</span>
+              <span class="stack-tag">Web Application</span>
+            </div>
+            <div class="project-card__links"><span class="project-status" aria-label="Project status: Active development">Active development</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-1" aria-label="Project: Portable AI Knowledge Assistant">
+          <div class="project-card__image">
+            <div class="project-card__img-placeholder" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3a7 7 0 0 0-4 12.75V19h8v-3.25A7 7 0 0 0 12 3Z"/><path d="M9 22h6M9 8h.01M15 8h.01M10 12h4"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__category">AI · Knowledge Management</div>
+            <h3 class="project-card__title">Portable AI Knowledge Assistant</h3>
+            <p class="project-card__summary">A local-first AI project for organizing a curated knowledge library and making its information easier to search and use. The design emphasizes portability, clear data organization, and integrity checks.</p>
+            <div class="project-card__stack">
+              <span class="stack-tag">Local-First</span>
+              <span class="stack-tag">AI</span>
+              <span class="stack-tag">Knowledge Retrieval</span>
+              <span class="stack-tag">Data Integrity</span>
+            </div>
+            <div class="project-card__links"><span class="project-status" aria-label="Project status: In progress">In progress</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2" aria-label="Project: AI-Driven Accounting Webpage">
+          <div class="project-card__image">
+            <div class="project-card__img-placeholder" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h4m-4 4h10m-3-4h3"/></svg>
             </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__category">Web Development</div>
             <h3 class="project-card__title">AI-Driven Accounting Webpage</h3>
-            <p class="project-card__summary">
-              A web application integrating AI to automate accounting tasks, generate financial summaries,
-              and assist users with expense tracking. Demonstrates ability to combine AI APIs with a clean,
-              user-focused frontend interface.
-            </p>
+            <p class="project-card__summary">A web application concept integrating AI to help automate accounting tasks, generate financial summaries, and assist with expense tracking through a clean, user-focused interface.</p>
             <div class="project-card__stack">
-              <span class="stack-tag">HTML</span>
-              <span class="stack-tag">CSS</span>
-              <span class="stack-tag">JavaScript</span>
-              <span class="stack-tag">AI API</span>
+              <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">AI API</span>
             </div>
             <div class="project-card__links">
-              <!-- UPDATE: Replace with your actual GitHub repo URL -->
-              <a href="https://github.com/lestervilo/Finance-Project" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                GitHub
-              </a>
+              <a href="https://github.com/lestervilo/Finance-Project" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
 
-        <!-- PROJECT 2: Phone / Hardware Repair -->
-        <article class="project-card reveal reveal-delay-1" aria-label="Project: Mobile Device Hardware Repair">
+        <article class="project-card reveal" aria-label="Project: Mobile Device and Hardware Repair">
           <div class="project-card__image">
-            <img src="./assets/lester-phone-repair.jpg" alt="Lester disassembling a mobile phone for repair with iFixit tools" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+            <img src="./assets/lester-phone-repair.jpg" alt="Lester disassembling a mobile phone for repair with iFixit tools" loading="lazy" width="800" height="450" class="project-card__photo" />
           </div>
           <div class="project-card__body">
             <div class="project-card__category">Hardware Repair · AMD Tech Franchise</div>
             <h3 class="project-card__title">Mobile Device &amp; Hardware Repair</h3>
-            <p class="project-card__summary">
-              Hands-on disassembly, diagnosis, and repair of mobile devices and computer hardware.
-              Using iFixit tools and precision components to replace screens, clean internals,
-              and restore full functionality — demonstrating real-world hardware proficiency.
-            </p>
+            <p class="project-card__summary">Hands-on disassembly, diagnosis, and repair of mobile devices and computer hardware, including component replacement, internal cleaning, and functional checks.</p>
             <div class="project-card__stack">
-              <span class="stack-tag">Hardware Repair</span>
-              <span class="stack-tag">Diagnostics</span>
-              <span class="stack-tag">Component Replacement</span>
-              <span class="stack-tag">iFixit Tools</span>
+              <span class="stack-tag">Hardware Repair</span><span class="stack-tag">Diagnostics</span><span class="stack-tag">Component Replacement</span><span class="stack-tag">iFixit Tools</span>
             </div>
-            <div class="project-card__links">
-              <span class="btn btn--ghost btn--sm" style="cursor:default;opacity:0.65;">Professional Work</span>
-            </div>
+            <div class="project-card__links"><span class="project-status">Professional work</span></div>
           </div>
         </article>
 
-        <!-- PROJECT 3: Real work — Lab OS Deployment -->
-        <article class="project-card reveal reveal-delay-2" aria-label="Project: 150+ Lab Computer OS Deployment">
+        <article class="project-card reveal reveal-delay-1" aria-label="Project: 150 plus Lab Computer OS Deployment">
           <div class="project-card__image">
-            <!-- ADD PHOTO: <img src="./assets/project-lab.jpg" alt="Lab deployment" loading="lazy" width="800" height="450"> -->
-            <div class="project-card__img-placeholder" aria-label="Project preview">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M7 7h.01M11 7h.01M15 7h.01"/></svg>
+            <div class="project-card__img-placeholder" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4M7 7h.01M11 7h.01M15 7h.01"/></svg>
             </div>
           </div>
           <div class="project-card__body">
-            <div class="project-card__category">Systems Administration · BYU Hawaii ITO</div>
+            <div class="project-card__category">Systems Administration · BYU–Hawaii ITO</div>
             <h3 class="project-card__title">150+ Lab Computer OS Deployment</h3>
-            <p class="project-card__summary">
-              Supervised the deployment of new operating systems and security software across 150+ lab
-              computers at BYU Hawaii. Ensured full compliance, minimized downtime, and maintained
-              system integrity throughout the rollout — a real-world enterprise-scale deployment.
-            </p>
+            <p class="project-card__summary">Supported deployment of operating systems and security software across more than 150 campus lab computers, helping maintain compliance and reduce disruption during rollout.</p>
             <div class="project-card__stack">
-              <span class="stack-tag">Windows 11</span>
-              <span class="stack-tag">OS Deployment</span>
-              <span class="stack-tag">Endpoint Security</span>
-              <span class="stack-tag">Compliance</span>
+              <span class="stack-tag">Windows 11</span><span class="stack-tag">OS Deployment</span><span class="stack-tag">Endpoint Security</span><span class="stack-tag">Compliance</span>
             </div>
-            <div class="project-card__links">
-              <span class="btn btn--ghost btn--sm" style="cursor:default;opacity:0.65;">Professional Work</span>
-            </div>
+            <div class="project-card__links"><span class="project-status">Professional work</span></div>
           </div>
         </article>
 
@@ -477,25 +480,28 @@
 
       <div class="timeline">
 
-        <!-- ITO CSR Technical Consultant — BYUH -->
+        <!-- Information Technology Security Specialist — BYU–Hawaii -->
         <div class="timeline__item reveal">
           <div class="timeline__dot" aria-hidden="true"></div>
-          <div class="timeline__period">October 2025 – Present</div>
-          <div class="timeline__role">ITO CSR Technical Consultant</div>
-          <div class="timeline__org">Brigham Young University · Laie, Hawaii</div>
-          <img src="./assets/lester-ito-uniform.jpg" alt="Lester in BYU Hawaii Office of Information Technology uniform" loading="lazy"
-            style="width:100%;max-width:340px;border-radius:var(--radius-xl);margin:var(--space-4) 0;object-fit:cover;aspect-ratio:3/4;border:1px solid var(--color-border);" />
-          <p class="timeline__desc">
-            Resolve 30+ technical tickets weekly covering hardware, software, and network issues —
-            improving first-call resolution by 15%. Supervised the deployment of new OS and security
-            software across 150+ lab computers, ensuring compliance and minimal downtime.
-          </p>
+          <div class="timeline__period">November 2026 – Present</div>
+          <div class="timeline__role">Information Technology Security Specialist</div>
+          <div class="timeline__org">Brigham Young University–Hawaii · Laie, Hawaii</div>
+          <p class="timeline__desc">Work with the Church Educational System Information Security Operations Center (CES SOC) and BYU–Hawaii IT staff to support campus cybersecurity efforts, including vulnerability remediation, security dashboards, log investigations, phishing response, and user awareness.</p>
           <div class="timeline__tags">
-            <span class="tag">IT Support</span>
-            <span class="tag">OS Deployment</span>
-            <span class="tag">Hardware Troubleshooting</span>
-            <span class="tag">Endpoint Security</span>
-            <span class="tag">Network Support</span>
+            <span class="tag">Cybersecurity</span><span class="tag">Information Security</span><span class="tag">Log Investigation</span><span class="tag">Vulnerability Management</span><span class="tag">Phishing Response</span>
+          </div>
+        </div>
+
+        <!-- Student Project and Operations Planner — BYU–Hawaii -->
+        <div class="timeline__item reveal reveal-delay-1">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__period">October 2025 – November 2026</div>
+          <div class="timeline__role">Student Project and Operations Planner</div>
+          <div class="timeline__org">Brigham Young University–Hawaii · Laie, Hawaii</div>
+          <img src="./assets/lester-ito-uniform.jpg" alt="Lester in a BYU–Hawaii Office of Information Technology uniform" loading="lazy" class="experience__photo" />
+          <p class="timeline__desc">Served as a primary point of contact for campus IT requests, diagnosing and resolving hardware, software, and network connectivity issues for students and faculty. Helped coordinate support work and keep requests moving through to resolution.</p>
+          <div class="timeline__tags">
+            <span class="tag">IT Service Management</span><span class="tag">IT Operations</span><span class="tag">Hardware Troubleshooting</span><span class="tag">Network Support</span>
           </div>
         </div>
 
@@ -691,7 +697,7 @@
           <p class="service-card__desc">
             Responsive tier-1 and tier-2 technical support for hardware, software, and network issues.
             Proven track record resolving 30+ tickets weekly with a 15% improvement in first-call
-            resolution at BYU Hawaii.
+            resolution at BYU–Hawaii.
           </p>
         </div>
 
@@ -770,15 +776,15 @@
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
         <div class="section-label" style="text-align:center;margin-bottom:var(--space-3)">Resume</div>
-        <h2 class="section-title" id="resume-title" style="text-align:center">Download My Resume</h2>
+        <h2 class="section-title" id="resume-title" style="text-align:center">Preview My Resume</h2>
         <p style="text-align:center;color:var(--color-text-muted);font-size:var(--text-base);margin-bottom:var(--space-8);max-width:48ch;margin-inline:auto;">
-          Get a full overview of my experience, skills, and qualifications in a single, recruiter-ready document.
+          Open the PDF in your browser to preview my experience, skills, and qualifications.
         </p>
-        <!-- EDIT: Replace href with your actual resume file path or Google Drive link -->
+        <!-- Opens the PDF in a new tab for browser preview. -->
         <div style="display:flex;justify-content:center;gap:var(--space-4);flex-wrap:wrap;">
-          <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--lg" download target="_blank" rel="noopener noreferrer">
+          <a href="./assets/Lester-Vilo-Resume.pdf" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Resume (PDF)
+            Preview Resume (PDF)
           </a>
           <!-- EDIT: Optional — link to your LinkedIn resume or online resume -->
           <a href="https://www.linkedin.com/in/lestervilo" class="btn btn--outline btn--lg" target="_blank" rel="noopener noreferrer">
@@ -863,31 +869,32 @@
             action="https://formspree.io/f/mzdqybvo"
             method="POST">
 
+            <!-- Spam honeypot: real visitors should leave this blank. -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="form-website">Leave this field empty</label>
+              <input type="text" id="form-website" name="_gotcha" tabindex="-1" autocomplete="off" />
+            </div>
             <!-- Formspree special fields -->
-            <input type="hidden" name="_replyto" value="lestervilo02@gmail.com" />
             <input type="hidden" name="_subject" value="New message from your portfolio" />
             <!-- Redirect back to your portfolio after submission -->
             <input type="hidden" name="_next" value="https://lestervilo.github.io/Lester-Vilo-Portfolio/" />
 
             <div class="form-group">
               <label class="form-label" for="form-name">Name</label>
-              <input class="form-input" type="text" id="form-name" name="name" placeholder="Your full name" required autocomplete="name" />
+              <input class="form-input" type="text" id="form-name" name="name" placeholder="Your full name" required autocomplete="name" maxlength="100" />
             </div>
             <div class="form-group">
               <label class="form-label" for="form-email">Email</label>
-              <input class="form-input" type="email" id="form-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <input class="form-input" type="email" id="form-email" name="email" placeholder="your@email.com" required autocomplete="email" maxlength="254" />
             </div>
             <div class="form-group">
               <label class="form-label" for="form-subject">Subject</label>
-              <input class="form-input" type="text" id="form-subject" name="subject" placeholder="Job opportunity / Collaboration / Question" />
+              <input class="form-input" type="text" id="form-subject" name="subject" placeholder="Job opportunity / Collaboration / Question" maxlength="150" />
             </div>
             <div class="form-group">
               <label class="form-label" for="form-message">Message</label>
-              <textarea class="form-textarea" id="form-message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+              <textarea class="form-textarea" id="form-message" name="message" rows="5" maxlength="3000" placeholder="Tell me about the role or project..." required></textarea>
             </div>
-            <!-- NOTE: This form currently shows a success message only. -->
-            <!-- To make it functional, connect it to Formspree, Netlify Forms, or a backend. -->
-            <!-- See: https://formspree.io/ for easy setup -->
             <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">
               Send Message
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -930,333 +937,5 @@
 </button>
 
 <script src="./app.js" defer></script>
-<script data-pplx-inline-edit>
-(function () {
-  if (window === window.top) return;
-
-  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
-  const MAX_FONT_BYTES = 500 * 1024;
-  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
-  let scrollForwarding = false;
-  let scrollRaf = 0;
-  let trustedTopOrigin = null;
-
-  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
-  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
-  // across multiple labels.
-  function matchesAllowedOrigin(origin) {
-    if (!origin) return false;
-    for (const entry of allowedParentOrigins) {
-      if (!entry.includes("*")) {
-        if (entry === origin) return true;
-        continue;
-      }
-      const pattern = new RegExp(
-        "^" +
-          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
-          "$",
-      );
-      if (pattern.test(origin)) return true;
-    }
-    return false;
-  }
-
-  // Trust decision: when the sender is same-origin-visible (event.origin is a
-  // real origin like https://www.perplexity.ai) we trust event.origin directly.
-  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
-  // broker's stamped `parentOrigin` to identify the top window. The fallback
-  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
-  // on the response path (see postToTrustedTop) to ensure replies can't be
-  // delivered to anyone but the actual top window of that claimed origin.
-  function getTrustedParentOrigin(event) {
-    const forwardedParentOrigin =
-      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
-    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
-    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
-  }
-
-  // All responses go to window.top with targetOrigin = the allowlisted origin.
-  // An attacker that iframes us inside their own null-origin broker can claim
-  // any parentOrigin they like, but the browser will drop the reply whenever
-  // the real top's origin doesn't match — so the screenshot never leaves.
-  function postToTrustedTop(message) {
-    if (!trustedTopOrigin) return;
-    try {
-      window.top.postMessage(message, trustedTopOrigin);
-    } catch (_error) {}
-  }
-
-  function inlineAll(original, clone) {
-    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
-
-    try {
-      const computedStyle = getComputedStyle(original);
-      // cssText on a computed style is the serialized declaration in modern
-      // Chromium/Safari — a single read beats enumerating ~400 longhand
-      // properties. Firefox returns "" here, so we fall back on empty.
-      const serialized = computedStyle.cssText;
-      if (serialized) {
-        clone.style.cssText = serialized;
-      } else {
-        const parts = new Array(computedStyle.length);
-        for (let index = 0; index < computedStyle.length; index += 1) {
-          const property = computedStyle[index];
-          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
-        }
-        clone.style.cssText = parts.join("");
-      }
-    } catch (_error) {}
-
-    const originalChildren = original.children;
-    const clonedChildren = clone.children;
-    for (
-      let index = 0;
-      index < originalChildren.length && index < clonedChildren.length;
-      index += 1
-    ) {
-      inlineAll(originalChildren[index], clonedChildren[index]);
-    }
-  }
-
-  function extractFontUrl(srcValue) {
-    const matches = [
-      ...srcValue.matchAll(
-        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
-      ),
-    ];
-    if (matches.length === 0) return null;
-    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
-    if (woff2) return woff2[1];
-    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
-    if (woff) return woff[1];
-    return matches[0][1];
-  }
-
-  // Cache resolved font URL -> data URI across captures. Fonts on a page
-  // essentially never change, and a batch run emits multiple captures back to
-  // back — without this we'd refetch + re-base64 every time.
-  const fontDataUriCache = new Map();
-  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
-
-  async function fetchAsDataUri(url) {
-    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
-    let dataUri = null;
-    try {
-      const response = await fetch(url, { mode: "cors", credentials: "omit" });
-      if (response.ok) {
-        const blob = await response.blob();
-        if (blob.size <= MAX_FONT_BYTES) {
-          dataUri = await new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onloadend = () =>
-              resolve(typeof reader.result === "string" ? reader.result : null);
-            reader.onerror = () => resolve(null);
-            reader.readAsDataURL(blob);
-          });
-        }
-      }
-    } catch (_error) {
-      dataUri = null;
-    }
-    fontDataUriCache.set(url, dataUri);
-    return dataUri;
-  }
-
-  function collectFontFaceRuleTexts() {
-    const rules = [];
-    for (const sheet of document.styleSheets) {
-      let cssRules;
-      try {
-        cssRules = sheet.cssRules;
-      } catch (_error) {
-        continue;
-      }
-      if (!cssRules) continue;
-      for (const rule of cssRules) {
-        const cssText = rule.cssText || "";
-        if (cssText.startsWith("@font-face")) rules.push(cssText);
-      }
-    }
-    return rules;
-  }
-
-  async function buildInlinedFontCss() {
-    const ruleTexts = collectFontFaceRuleTexts();
-    if (ruleTexts.length === 0) return null;
-
-    const resolved = ruleTexts.map((cssText) => {
-      if (!SRC_DECLARATION_RE.test(cssText)) return null;
-      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
-      if (!srcMatch) return null;
-      const url = extractFontUrl(srcMatch[1]);
-      if (!url) return null;
-      try {
-        return { cssText, url: new URL(url, document.baseURI).href };
-      } catch (_error) {
-        return null;
-      }
-    });
-
-    const dataUris = await Promise.all(
-      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
-    );
-
-    const inlined = [];
-    let totalBytes = 0;
-    for (let index = 0; index < resolved.length; index += 1) {
-      const entry = resolved[index];
-      const dataUri = dataUris[index];
-      if (!entry || !dataUri) continue;
-      const approxBytes = dataUri.length * 0.75;
-      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
-      totalBytes += approxBytes;
-      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
-    }
-    return inlined.length > 0 ? inlined.join("\n") : null;
-  }
-
-  function stripExternal(clone) {
-    const images = clone.querySelectorAll("img");
-    for (let index = 0; index < images.length; index += 1) {
-      const src = images[index].getAttribute("src");
-      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
-    }
-
-    const elements = clone.querySelectorAll("*");
-    for (let index = 0; index < elements.length; index += 1) {
-      const style = elements[index].style.cssText;
-      if (style && style.includes("url(")) {
-        elements[index].style.cssText = style.replace(
-          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
-          "none",
-        );
-      }
-    }
-  }
-
-  function emitScroll() {
-    scrollRaf = 0;
-    if (!scrollForwarding) return;
-    postToTrustedTop({
-      type: "INLINE_EDIT_SCROLL",
-      scrollX: window.scrollX,
-      scrollY: window.scrollY,
-    });
-  }
-
-  window.addEventListener(
-    "scroll",
-    function () {
-      if (!scrollForwarding || scrollRaf) return;
-      scrollRaf = requestAnimationFrame(emitScroll);
-    },
-    { passive: true, capture: true },
-  );
-
-  async function handleCaptureRequest(event) {
-    const requestId = event.data.requestId;
-    const scrollX = window.scrollX;
-    const scrollY = window.scrollY;
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-
-    function postResult(dataUrl) {
-      postToTrustedTop({
-        type: "INLINE_EDIT_SCREENSHOT_RESULT",
-        requestId,
-        dataUrl,
-        scrollX,
-        scrollY,
-      });
-    }
-
-    try {
-      // Wait for any pending web fonts to resolve so both inline metrics and
-      // the @font-face inlining below see the same loaded faces.
-      if (document.fonts && document.fonts.ready) {
-        try {
-          await document.fonts.ready;
-        } catch (_error) {}
-      }
-
-      const clone = document.documentElement.cloneNode(true);
-      inlineAll(document.documentElement, clone);
-
-      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
-      for (let index = 0; index < removedNodes.length; index += 1) {
-        removedNodes[index].remove();
-      }
-
-      stripExternal(clone);
-
-      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
-      // can resolve them — external font URLs aren't fetched during
-      // foreignObject rendering, which would otherwise force a fallback face
-      // and change text metrics.
-      const inlinedFontCss = await buildInlinedFontCss();
-      if (inlinedFontCss) {
-        const styleEl = document.createElement("style");
-        styleEl.textContent = inlinedFontCss;
-        const head = clone.querySelector("head");
-        if (head) head.appendChild(styleEl);
-        else clone.insertBefore(styleEl, clone.firstChild);
-      }
-
-      const html = new XMLSerializer().serializeToString(clone);
-      const svg =
-        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
-        '<foreignObject width="100%" height="100%">' +
-        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
-        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
-        html +
-        "</div></div></foreignObject></svg>";
-      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-      const image = new Image();
-      image.onload = function () {
-        const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
-        canvas.getContext("2d").drawImage(image, 0, 0);
-        postResult(canvas.toDataURL("image/png"));
-      };
-      image.onerror = function () {
-        postResult(null);
-      };
-      image.src = svgUrl;
-    } catch (_error) {
-      postResult(null);
-    }
-  }
-
-  window.addEventListener("message", function (event) {
-    if (!event.data) return;
-    // Only accept messages from the direct parent frame. Blocks sibling /
-    // unrelated-window postMessage senders that could otherwise reach us.
-    if (event.source !== window.parent) return;
-
-    const trustedParentOrigin = getTrustedParentOrigin(event);
-    if (!trustedParentOrigin) return;
-    trustedTopOrigin = trustedParentOrigin;
-
-    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
-      scrollForwarding = true;
-      emitScroll();
-      return;
-    }
-
-    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
-      scrollForwarding = false;
-      if (scrollRaf) cancelAnimationFrame(scrollRaf);
-      scrollRaf = 0;
-      return;
-    }
-
-    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
-
-    handleCaptureRequest(event);
-  });
-})();
-
-
-</script></body>
+</body>
 </html>

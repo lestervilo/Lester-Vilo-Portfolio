@@ -13,27 +13,42 @@
      ----------------------------------------------------------- */
   const html = document.documentElement;
   const themeToggle = document.querySelector('[data-theme-toggle]');
+  const themeIcons = document.querySelectorAll('[data-theme-icon]');
+  const themeStorageKey = 'lester-portfolio-theme';
 
-  // Initialize theme from system preference
-  let currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  html.setAttribute('data-theme', currentTheme);
-  updateThemeIcon();
-
-  themeToggle && themeToggle.addEventListener('click', () => {
-    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', currentTheme);
-    themeToggle.setAttribute('aria-label', `Switch to ${currentTheme === 'dark' ? 'light' : 'dark'} mode`);
-    updateThemeIcon();
-  });
+  function readSavedTheme() {
+    try {
+      const saved = window.localStorage.getItem(themeStorageKey);
+      return saved === 'light' || saved === 'dark' ? saved : null;
+    } catch (_) {
+      return null;
+    }
+  }
 
   function updateThemeIcon() {
     if (!themeToggle) return;
-    themeToggle.innerHTML = currentTheme === 'dark'
-      // Sun icon shown in dark mode
-      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-      // Moon icon shown in light mode
-      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    themeIcons.forEach(icon => {
+      icon.hidden = icon.getAttribute('data-theme-icon') === (isDark ? 'moon' : 'sun');
+    });
+    themeToggle.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} mode`);
   }
+
+  const savedTheme = readSavedTheme();
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  html.setAttribute('data-theme', savedTheme || systemTheme);
+  updateThemeIcon();
+
+  themeToggle && themeToggle.addEventListener('click', () => {
+    const nextTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', nextTheme);
+    try {
+      window.localStorage.setItem(themeStorageKey, nextTheme);
+    } catch (_) {
+      // Theme still works when storage is unavailable.
+    }
+    updateThemeIcon();
+  });
 
   /* -----------------------------------------------------------
      MOBILE NAV TOGGLE
@@ -184,7 +199,12 @@
      ----------------------------------------------------------- */
   const form = document.getElementById('contactForm');
 
-  form && form.addEventListener('submit', () => {
+  form && form.addEventListener('submit', (event) => {
+    const honeypot = form.querySelector('[name="_gotcha"]');
+    if (honeypot && honeypot.value.trim() !== '') {
+      event.preventDefault();
+      return;
+    }
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
       submitBtn.disabled = true;

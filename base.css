@@ -93,3 +93,13 @@ a, button, [role='button'], [role='link'], input, textarea, select {
   white-space: nowrap;
   border-width: 0;
 }
+
+
+/* Form anti-spam honeypot: visually hidden from people, still present in markup. */
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
